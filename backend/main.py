@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 import os
 from dotenv import load_dotenv
+from deep_translator import GoogleTranslator
 import asyncio
 from services.url_analyzer import URLAnalyzer
 from services.ai_analyzer import AIAnalyzer
@@ -17,6 +18,7 @@ load_dotenv(dotenv_path=dotenv_path)
 print("Mongo URI from env:", os.getenv("MONGO_URI"))
 
 app = FastAPI(title="Scam URL Detector API", version="1.0.0")
+
 
 # CORS configuration
 app.add_middleware(

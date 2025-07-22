@@ -1,6 +1,7 @@
 import openai
 import os
 from typing import Dict
+from deep_translator import GoogleTranslator
 
 class TranslationService:
     def __init__(self):
