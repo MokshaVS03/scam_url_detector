@@ -27,7 +27,7 @@ langchain-core==0.3.67
 langchain-text-splitters==0.3.8
 motor==2.5.1
 pymongo==3.12.3
-
+dnspython==2.6.1
 openai==1.93.0
 orjson==3.10.18
 packaging==24.2
